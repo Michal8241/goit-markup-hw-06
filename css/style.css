@@ -688,16 +688,18 @@ margin-top: 20px;
     width: 85%;
     font-size: 12px;
     color: var(--main-silver);
-    padding-top: 10px;
+    padding-top: 10px; 
 }
-.pop-window-forms>div>input {
+
+
+/* .pop-window-forms>div>input {
     padding: 8px 8px 8px 42px;
     border: 1px solid var(--border-input);
     border-radius: 4px; 
     transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     
-}
+} */
 .pop-window-forms>div>input:focus {
     outline: 0;
     border-color: var(--main-blue);
@@ -718,12 +720,7 @@ margin-top: 20px;
     font-size: 14px;
     color: var(--main-silver);
 }
-.pop-window-checkbox {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    display: flex;
-    align-items: center;
-}
+
 .pop-window-submit {
     width: 200px;
     height: 50px;
@@ -732,6 +729,17 @@ margin-top: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pop-window-submit:hover {
+    cursor: pointer;
+}
+.pop-window-checkbox {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 14px;
 }
 .pop-window-forms>textarea {
     height: 120px;
@@ -763,8 +771,20 @@ margin-top: 20px;
     top: 10px;
     left: 13px;
 }
+.pop-window-inpt-svg>input {
+    padding: 8px 8px 8px 42px;
+    border: 1px solid var(--border-input);
+    border-radius: 4px;
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+.pop-window-forms>label {
+    padding-bottom: 4px;
+    padding-top: 10px;
+}
 
-.social-footer-email>form>input {
+
+.social-footer-email>form>div>input {
     margin-top: 20px;
     width: 358px;
     height: 50px;
@@ -779,7 +799,7 @@ margin-top: 20px;
     color: var(--main-white);
     text-transform: uppercase;
 }
-.social-footer-email>form>input:focus {
+.social-footer-email>form>div>input:focus {
     border-color: var(--main-blue);
     outline: 0;
 }
@@ -804,4 +824,27 @@ margin-top: 20px;
 .footer>div>button>svg {
     padding-left: 24px;
     box-sizing: content-box;
+}
+.social-footer-email>form>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.social-footer-email>form>div>button {
+    background-color: var(--main-blue);
+    width: 200px;
+    height: 50px;
+    padding-left: 12px;
+    color: var(--main-white);
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.social-footer-email>form>div>button>svg {
+    margin-left: 24px;
 }
